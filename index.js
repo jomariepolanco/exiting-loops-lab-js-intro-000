@@ -6,13 +6,11 @@ function breakOut(array, changeValue, stopValue) {
 
 function keepGoing(array, changeValue, skipValue) {
   for (let i = 0; i < array.length; i++) {
-    if(array[i] === skipValue) {
-      return array;
-    } else {
-      return changeValue;
-    }
-  }
-};
+    return changeValue;
+} else if (array[i] === skipValue) {
+  return array;
+}
+}
 
 function findBy(array, findFn) {
 
